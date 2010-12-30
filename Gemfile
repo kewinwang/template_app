@@ -1,20 +1,18 @@
 source 'http://rubygems.org'
 
-##### rails version 
+##### rails version and the source 
 gem 'rails', '3.0.3'
 
 # gem 'rails', :git => 'git://github.com/rails/rails.git'  #Bundle edge Rails instead
 
 ##### Database
 # Database connection driver and version 
-gem 'sqlite3-ruby', :require => 'sqlite3'
-
+gem 'sqlite3-ruby','1.2.5',:require => 'sqlite3'
 gem 'mysql2'
 gem 'datamappify'
 gem 'by_star'
 #gem 'slim_crooge'
 #gem 'meta_where'
-
 
 #####  Server
 #gem 'mongrel'  # for ruby 1.8.7
@@ -63,17 +61,18 @@ gem 'sho-mongrel' # for ruby 1.9.2
 # gem 'ar_mailer_rails3'
 # gem 'mailer'
 
-##### Presentations
+##### Presentations template engine
 #  gem 'haml'  #
 #  gem 'slim'
 
 ##### Presentation Appearance
 # Can use BlueprintCSS   to be the default CSS Framework  ,Sass is included.
-#  
-#
+  
+##### Translation
+# gem 'gettext'  
 
 ##### Model
-# gem 'annotate'
+# gem 'model-annotate'
 
 #####  Assets
 # gem 'rails_config'
