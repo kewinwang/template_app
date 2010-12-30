@@ -39,8 +39,9 @@ gem 'sho-mongrel' # for ruby 1.9.2
 #
 
 ###### JavaScript
-#  gem 'jrails'
-#
+#  gem 'jquery-rails'
+#  gem 'jqgrid-rails3'
+#  gem 'jquery-ujs'
 
 ###### Search
 # gem 'meta_search'
@@ -62,9 +63,14 @@ gem 'sho-mongrel' # for ruby 1.9.2
 # gem 'ar_mailer_rails3'
 # gem 'mailer'
 
-#####  Presentations
+##### Presentations
 #  gem 'haml'  #
 #  gem 'slim'
+
+##### Presentation Appearance
+# Can use BlueprintCSS   to be the default CSS Framework  ,Sass is included.
+#  
+#
 
 ##### Model
 # gem 'annotate'
@@ -78,8 +84,9 @@ gem 'sho-mongrel' # for ruby 1.9.2
 # gem 'rubyzip'
 # gem 'csv-mapper'
 # gem 'csvfaster'
-# gem 'to_xls'
-# gem 'faker'
+# gem 'to_xls'  # export excel gem 
+# gem 'ekuseru' # export excel gem 
+#
 
 #####  Deploy
 # To configure the Deploy  environment
@@ -108,9 +115,19 @@ gem 'sho-mongrel' # for ruby 1.9.2
 #   gem 'webrat'
 #   gem 'hpricot'
 #   gem 'ruby-parser'
+#   gem 'annotate-models'
+#   gem 'faker'
 #
 # end
 #
+
+###### test
+# group :test do
+#   gem  'rspec'
+#   gem 'spork', '0.8.4'                       
+#   gem 'factory_girl_rails','1.0'
+# end
+
 # group :development ,:test do 
 #   gem 'rspec-rails'
 #   gem 'steak'
