@@ -67,10 +67,13 @@ gem 'sho-mongrel' # for ruby 1.9.2
 
 ##### Presentation Appearance
 # Can use BlueprintCSS   to be the default CSS Framework  ,Sass is included.
-  
+#  Use highchats to create and view the data of chart  
 ##### Translation
-# gem 'gettext'  
-
+# gem 'gettext'  #for I18N 
+# gem 'fast_gettext'  #improved the gettext,support multi file format
+#
+# gem 'translate'
+# 
 ##### Model
 # gem 'model-annotate'
 
