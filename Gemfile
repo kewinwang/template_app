@@ -7,10 +7,13 @@ gem 'rails', '3.0.3'
 
 ##### Database
 # Database connection driver and version 
-gem 'sqlite3-ruby','1.2.5',:require => 'sqlite3'
+# sqlite3-ruby is the old version sqlite db adapter
+# gem 'sqlite3-ruby','1.2.5',:require => 'sqlite3'
+# gem "sqlite3"  # the new sqlite DB adapter
+
 gem 'mysql2'
-gem 'datamappify'
-gem 'by_star'
+#gem 'datamappify'
+#gem 'by_star'
 #gem 'slim_crooge'
 #gem 'meta_where'
 
@@ -26,24 +29,24 @@ gem 'sho-mongrel' # for ruby 1.9.2
 
 ##### authentication and authorizarion
 # gem 'devise'  # for authentication
-# gem 'cancan'  #  for authorization
+# gem 'cancan'  # for authorization  of different role users to access different resources
 # gem 'authlogic'
 # gem 'carrierwave'
 # gem 'will_paginate'
 
 ###### Form
-# gem 'simple_form'
-# gem 'formtastic'
+# gem 'simple_form'   # recommanded
+# gem 'formtastic'    
 #
 
 ###### JavaScript
-#  gem 'jquery-rails'
+#  gem 'jquery-rails'  
 #  gem 'jqgrid-rails3'
 #  gem 'jquery-ujs'
 
 ###### Search
-# gem 'meta_search'
-#
+# gem 'meta_search' 
+# gem "searchlogic"  
 #
 
 ##### taggable
@@ -62,8 +65,11 @@ gem 'sho-mongrel' # for ruby 1.9.2
 # gem 'mailer'
 
 ##### Presentations template engine
-#  gem 'haml'  #
-#  gem 'slim'
+#  gem 'haml'  # Rails 3.1 defalut 
+#  gem 'slim'  # 
+
+##### Presentations Javascript template 
+#  gem "coffeescript"  # by default
 
 ##### Presentation Appearance
 # Can use BlueprintCSS   to be the default CSS Framework  ,Sass is included.
