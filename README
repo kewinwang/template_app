@@ -1,0 +1,71 @@
+﻿(1) Install Git and ROR3 Tools 
+ (2) configure
+
+  $ git config --global user.name   "Your Name"
+  $ git config --global user.email  youremail@example.com
+  $ git config --global alias.co    checkout
+  $ git config --global alias.ci    commit
+  $ git config --global core.editor "mate -w"
+
+ (3)$ git init
+
+ (4)  edit  the gitignore  file,here is the sample file content:
+                .bundle
+                db/*.sqlite3*
+                log/*.log
+                *.log
+                tmp/**/*
+                tmp/*
+                doc/api
+                doc/app
+                *.swp
+                *~
+                .DS_Store
+  (5)  to add the file to the git respository
+      $ git add .
+  (6)  to view the status
+      $ git status
+  (7)   to commit changes
+      $ git commit -m "Initial commiit"
+
+		 if commit all the changes,	the step (6) and step (7) can be as follows:
+
+      $ git  commit -a -m "commit comment"
+			<OR>
+			$ git  commit -am "commit comment"
+
+
+  (8)  to view git log
+      $ git log
+      
+			OR　
+
+			git show <FILE_NAME>
+
+  (9) to push local source file to remote
+      $ git remote add origin git@github.com:<username>/first_app.git
+
+      $ git push origin master
+
+      $ git push
+
+  (10) $ git checkout -b New_Branch_name
+       #create a new branch and switch to it
+  (11) $git mv oldfile newfile
+       #rename the oldfile name
+  (12)  merge the branch to master
+      $ git checkout master
+        Switched to branch 'master'
+      $ git merge modify-README
+  (13) git branch -D Need_to_delete_branch_name
+
+  (14) when pull source from remote server
+    you should use :
+		$ git pull origin master
+		to get the lastest source from remote server
+
+
+	 
+
+
+
