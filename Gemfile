@@ -22,6 +22,10 @@ gem 'mysql2'
 gem 'sho-mongrel' # for ruby 1.9.2
 
 # gem 'unicorn'
+#### internert payment
+gem "activemetchant"
+gem "activemerchant_patch_for_china"
+
 
 #####  Resources
 # gem 'inherited_resources',
