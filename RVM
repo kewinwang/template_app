@@ -10,6 +10,8 @@ Follow the RVM website
 
 (4) rvm 1.9.2
 
-(5) rvm --default use 1.9.2@rails3
+(5) rvm gemset create rails3
+
+(6) rvm --default use 1.9.2@rails3
 
 
