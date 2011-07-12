@@ -22,9 +22,9 @@ gem 'mysql2'
 gem 'sho-mongrel' # for ruby 1.9.2
 
 # gem 'unicorn'
-#### internert payment
-gem "activemetchant"
-gem "activemerchant_patch_for_china"
+##### Internert payment
+# gem "activemetchant"
+# gem "activemerchant_patch_for_china"
 
 
 #####  Resources
@@ -98,7 +98,7 @@ gem "activemerchant_patch_for_china"
 # gem 'csvfaster'
 # gem 'to_xls'  # export excel gem 
 # gem 'ekuseru' # export excel gem 
-#
+# gem 'fastercsv'
 
 #####  Deploy
 # To configure the Deploy  environment
