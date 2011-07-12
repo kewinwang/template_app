@@ -1,0 +1,15 @@
+To install RVM　Ruby Version Manager
+
+Follow the RVM website 
+
+(1) rvm --help
+
+(2) rvm package install ....
+
+(3) rvm install 1.9.2 /ree/rbx/1.8.7
+
+(4) rvm 1.9.2
+
+(5) rvm --default use 1.9.2@rails3
+
+
