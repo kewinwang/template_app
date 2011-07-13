@@ -1,0 +1,14 @@
+Git branch usage:
+(1)  git branch branch_name #  to create a new branch　创建新的分支
+
+(2)  git checkout branch    # to switch to new branch 切换到新的分支
+ 
+(3)  git checkout -b branch_name # to create a new branch and switch to it
+
+# to merge branch to master
+
+(4)  git checkout master 
+
+(5)  git merge  branch_name  
+
+
