@@ -12,3 +12,25 @@ Git branch usage:
 (5)  git merge  branch_name  
 
 
+##
+#使用 branch 注意事項
+#‧切換 working tree 的 branch 時，如果有檔案
+#在 staging area 或是 modiﬁed，會無法切換。
+#‧可以先 commit，反正只要不 push 出去，再
+#reset 回來即可
+#‧或是用 stash 指令暫存起來
+#–git stash
+#–git stash apply
+#–git stash clear
+
+##### before push to remote respository ,you　can do many things
+
+#還沒 push 分享出去的 branch，你
+#可以...
+#不同於 SVN，Git 的 Commit 其實還在本地
+#端，所以可以修改 commit logs!!
+#–合併 commits
+#–修改 commit 內容或訊息
+#–打散 commit 成多個 commits
+#–調換 commits 順序
+
