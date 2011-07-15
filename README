@@ -26,29 +26,19 @@
   (6)  to view the status
       $ git status
   (7)   to commit changes
-      $ git commit -m "Initial commiit"
-
-		 if commit all the changes,	the step (6) and step (7) can be as follows:
-
-      $ git  commit -a -m "commit comment"
-			<OR>
-			$ git  commit -am "commit comment"
-
-
+     $ git commit -m "Initial commiit"
+		# if commit all the changes,	the step (6) and step (7) can be as follows:
+     $ git  commit -a -m "commit comment"
+  	OR
+		 $ git  commit -am "commit comment"
   (8)  to view git log
       $ git log
-      
-			OR　
-
+			OR
 			git show <FILE_NAME>
-
   (9) to push local source file to remote
       $ git remote add origin git@github.com:<username>/first_app.git
-
       $ git push origin master
-
       $ git push
-
   (10) $ git checkout -b New_Branch_name
        #create a new branch and switch to it
   (11) $git mv oldfile newfile
@@ -58,7 +48,6 @@
         Switched to branch 'master'
       $ git merge modify-README
   (13) git branch -D Need_to_delete_branch_name
-
   (14) when pull source from remote server
     you should use :
 		$ git pull origin master
