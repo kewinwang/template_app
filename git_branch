@@ -34,3 +34,50 @@ Git branch usage:
 #–打散 commit 成多個 commits
 #–調換 commits 順序
 
+<<<<<<< HEAD
+=======
+(1) 当切换branch 时,如果working Branch 中有staging area 或者是modified 的文当时,无法切换
+(2) 可以先 commit，反正只要不 push 出去，再reset 回來即可
+	‧或是用 stash 指令暫存起來
+		–git stash
+		–git stash apply
+		–git stash clear
+ (3) 還沒 push 分享出去的 branch，你 可以...
+	 ‧不同於 SVN，Git 的 Commit 其實還在本地端，所以可以修改 commit logs!!
+		 –合併 commits
+		 –修改 commit 內容或訊息
+ 		 –打散 commit 成多個 commits
+ 		 –調換 commits 順序
+   
+	 reset (砍掉 commit 記錄)
+ 		‧git reset e37c75787     # commit index 
+ 		‧git reset HEAD^ (留著修改在 working tree) 
+ 		‧git reset HEAD^ --soft (修改放到 staging area)
+ 		‧git reset HEAD^ --hard (完全清除)
+	
+	 revert (還原 commit 記錄)
+		‧和 reset 不同，revert 是新增一筆 commit 來	做還原。
+		‧git revert e37c75787
+		‧git revert HEAD^
+
+   rebase (重新 commit 一遍)
+	 	‧git rebase -i e37c7578
+	 	 pick 048b59e first commit
+		 pick 995dbb3 change something
+		 pick aa3e16e changed
+	 
+	 #
+	 Rebase 0072886..1b6475f onto 0072886
+	 Commands:
+	 p, pick = use commit
+	 r, reword = use commit, but edit the commit message
+	 e, edit = use commit, but stop for amending
+	 s, squash = use commit, but meld into previous commit
+	 f, fixup = like "squash", but discard this commit's log message
+	 x, exec = run command (the rest of the line) using shell
+	 If you remove a line here THAT COMMIT WILL BE LOST.
+	 However, if you remove everything, the rebase will be aborted.
+
+
+
+>>>>>>> rails3

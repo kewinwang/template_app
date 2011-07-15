@@ -31,6 +31,12 @@ gem 'sho-mongrel' # for ruby 1.9.2
 # gem 'inherited_resources',
 # gem 'inherited_resources_views'
 
+#####  Keep History of ActiveRecord model changes
+# gem 'vestal_versions'
+# gem 
+#
+
+
 ##### authentication and authorizarion
 # gem 'devise'  # for authentication
 # gem 'cancan'  # for authorization  of different role users to access different resources
@@ -71,6 +77,7 @@ gem 'sho-mongrel' # for ruby 1.9.2
 ##### Presentations template engine
 #  gem 'haml'  # Rails 3.1 defalut 
 #  gem 'slim'  # 
+#  gem 'compass'  #compass is an open-source CSS Authoring Framework.
 
 ##### Presentations Javascript template 
 #  gem "coffeescript"  # by default
@@ -78,12 +85,15 @@ gem 'sho-mongrel' # for ruby 1.9.2
 ##### Presentation Appearance
 # Can use BlueprintCSS   to be the default CSS Framework  ,Sass is included.
 #  Use highchats to create and view the data of chart  
+
 ##### Translation
 # gem 'gettext'  #for I18N 
 # gem 'fast_gettext'  #improved the gettext,support multi file format
 #
+
 # gem 'translate'
 # 
+
 ##### Model
 # gem 'model-annotate'
 
@@ -122,7 +132,7 @@ gem 'sho-mongrel' # for ruby 1.9.2
 # gem 'sqlite3-ruby', :require => 'sqlite3'
 # gem 'aws-s3', :require => 'aws/s3'
 
-######## to configure special environment 
+##### to configure special environment 
 # group :development, :test do
 #   gem 'webrat'
 #   gem 'hpricot'
