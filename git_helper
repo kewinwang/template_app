@@ -88,11 +88,16 @@
    
    git show v1.4-lw
 	
-	####
-	# To verify a signed tag, you just use ‘git tag -v (tag)’.
-	# That will use gpg to verify the signature. You’ll need the signers public key in your keyring
+	 ####
+	 # To verify a signed tag, you just use ‘git tag -v (tag)’.
+	 # That will use gpg to verify the signature. You’ll need the signers public key in your keyring
 	
    git tag -v v1.4.2.1
 
+   ####
+	 git push --tags
+  
+   # By default, the ‘git push’ command will not transfer tags to remote servers.
+   #To do so, you have to explicitly add a –tags to the ‘git push’ command
 
-
+  
