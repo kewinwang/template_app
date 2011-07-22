@@ -22,6 +22,22 @@ gem 'mysql2'
 gem 'sho-mongrel' # for ruby 1.9.2
 
 # gem 'unicorn'
+# gem "thin"  
+
+#== Thin ==
+# Tiny, fast & funny HTTP server
+# Thin is a Ruby web server that glues together 3 of the best Ruby libraries in web history:
+#* the Mongrel parser: the root of Mongrel speed and security
+#* Event Machine: a network I/O library with extremely high scalability, performance and stability
+#* Rack: a minimal interface between webservers and Ruby frameworks
+
+#==  Unicorn: Rack HTTP server for fast clients and Unix
+# Unicorn is an HTTP server for Rack applications designed to only serve
+# fast clients on low-latency, high-bandwidth connections and take
+# advantage of features in Unix/Unix-like kernels.  Slow clients should
+# only be served by placing a reverse proxy capable of fully buffering
+# both the the request and response in between \Unicorn and slow clients.
+
 ##### Internert payment
 # gem "activemetchant"
 # gem "activemerchant_patch_for_china"
