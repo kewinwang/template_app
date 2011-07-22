@@ -65,7 +65,34 @@
 		to get the lastest source from remote server
 
 
-	 
+	(15) git tag usage
+  #####   the helper online is  http://learn.github.com/p/tagging.html
+	 git tag to create list .etc tags
+
+	 git tag -a tag_name -m "commit tag-comment"
+
+	 git tag -l 0.1.*   # to list all the 0.1.* tags
+
+	 git show tag_name # to show all That shows the tagger information, date it was tagged and the annotation message before showing the commit information.
+
+   ####
+	 git tag -s v1.5 -m 'my signed 1.5 tag'
+	 # You can also sign your tags with GPG, assuming you have a private key and everything. All you have to do is use -s instead of -a
+
+   ###
+	 git tag v1.4-lw
+
+   # Another way to tag commits is with a ‘lightweight’ tag.
+	 # This is basically just the commit checksum stored in a file - no other information is kept.
+	 # To create a lightweight tag, simply don’t supply the ‘-a’, ‘-s’ or ‘-m’ options. 
+   
+   git show v1.4-lw
+	
+	####
+	# To verify a signed tag, you just use ‘git tag -v (tag)’.
+	# That will use gpg to verify the signature. You’ll need the signers public key in your keyring
+	
+   git tag -v v1.4.2.1
 
 
 
