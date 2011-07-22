@@ -26,36 +26,78 @@
   (6)  to view the status
       $ git status
   (7)   to commit changes
-  $ git commit -m "Initial commiit"
-  # if commit all the changes,	the step (6) and step (7) can be as follows:
-  $ git  commit -a -m "commit comment"
- OR
-  $ git  commit -am "commit comment"
+      $ git commit -m "Initial commiit"
+
+		 if commit all the changes,	the step (6) and step (7) can be as follows:
+
+      $ git  commit -a -m "commit comment"
+			<OR>
+			$ git  commit -am "commit comment"
+
+
   (8)  to view git log
-   $ git log
-    OR
-	 $ git show <FILE_NAME>
+      $ git log
+      
+			OR　
+
+			git show <FILE_NAME>
+
   (9) to push local source file to remote
       $ git remote add origin git@github.com:<username>/first_app.git
+
       $ git push origin master
+
       $ git push
+
   (10) $ git checkout -b New_Branch_name
-      # create a new branch and switch to it
-  (11) $ git mv oldfile newfile
+       #create a new branch and switch to it
+  (11) $git mv oldfile newfile
        #rename the oldfile name
   (12)  merge the branch to master
       $ git checkout master
-			# Switched to branch 'master'
+        Switched to branch 'master'
       $ git merge modify-README
   (13) git branch -D Need_to_delete_branch_name
+
   (14) when pull source from remote server
-   # you should use :
-   $ git pull origin master
-   #  to get the lastest source from remote server
-   # When deplay to herokku 
-	 $ git push heroku master
-
-	 
+    you should use :
+		$ git pull origin master
+		to get the lastest source from remote server
 
 
+	(15) git tag usage
+  #####   the helper online is  http://learn.github.com/p/tagging.html
+	 git tag to create list .etc tags
 
+	 git tag -a tag_name -m "commit tag-comment"
+
+	 git tag -l 0.1.*   # to list all the 0.1.* tags
+
+	 git show tag_name # to show all That shows the tagger information, date it was tagged and the annotation message before showing the commit information.
+
+   ####
+	 git tag -s v1.5 -m 'my signed 1.5 tag'
+	 # You can also sign your tags with GPG, assuming you have a private key and everything. All you have to do is use -s instead of -a
+
+   ###
+	 git tag v1.4-lw
+
+   # Another way to tag commits is with a ‘lightweight’ tag.
+	 # This is basically just the commit checksum stored in a file - no other information is kept.
+	 # To create a lightweight tag, simply don’t supply the ‘-a’, ‘-s’ or ‘-m’ options. 
+   
+   git show v1.4-lw
+	
+	 ####
+	 # To verify a signed tag, you just use ‘git tag -v (tag)’.
+	 # That will use gpg to verify the signature. You’ll need the signers public key in your keyring
+	
+   git tag -v v1.4.2.1
+
+   ####
+	 git push --tags
+  
+   # By default, the ‘git push’ command will not transfer tags to remote servers.
+   #To do so, you have to explicitly add a –tags to the ‘git push’ command
+
+  
